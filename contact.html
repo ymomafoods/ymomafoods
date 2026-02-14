@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMOMA FOODS</title>
+    <link rel="stylesheet" href="styles3.css">
+
+    <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Add icon library -->
+
+</head>
+<body>
+
+     <!-- Header section Start-->
+        
+    <!-- Taglines Section -->
+     
+    <div class="tagline-container">
+        <p>Cibus medicina et medicina cibus est</p>
+        <p>உணவே மருந்து, மருந்தே உணவு</p>
+        <p>Food is Medicine, Medicine is Food</p>
+    </div>  
+  
+
+    <header class="navbar">
+        <div class = "logo">
+            <img src="image/NewLogo.png" alt="Company Name Logo">
+        </div>
+
+        <nav class="nav-links">
+            <ul>
+            <li><a href="index.html" onclick="showPage('index')">Home</a></li>
+            <li><a href="products.html" onclick="showPage('products')">Products</a></li>
+            <li><a href="aboutus.html" onclick="showPage('aboutus')">About YMOMA</a></li>
+            <li><a href="contact.html" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="navbar-spacer"></div>
+
+    </header>
+
+    
+   
+    <!-- Banner section-->
+        <div class="bannerp">
+          
+            <h4> A <span>ZING</span> IN YOUR TONGUE </h4>
+            <br>
+            <h3>NO COMPROMISE</h3>
+          
+        </div>
+    <!-- Banner section-->    
+
+
+
+
+
+     <!-- Content Container (The actual pages) -->
+    <div class="content-container">
+       
+
+     
+<main>
+        <!-- Section for the three topic grids -->
+        <section class="grid-container">
+            
+            <article class="grid-items">
+                <h2>Whatsapp us</h2>
+                <br>
+                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                <img src="image/whatsapp_15015928.png" style="width: 50px; height: 50px;"></a>
+                <p> 437-799-2255 </p>
+            </article>
+
+            <article class="grid-items">
+                <h2> Call us direct</h2>
+                <br>
+                
+                <a href="tel:+14377992255">
+                <img src="image/old-phone_8568081.png" style="width: 50px; height: 50px;"></a>
+                <p> 437-799-2255 </p>
+            </article>
+
+
+            <article class="grid-items">
+                <h2>Email Us</h2>
+                <br>    
+                
+                <a href="mailto:ymomafoods@gmail.com?cc=cc-recipient@example.com&bcc=bcc-recipient@example.com&subject=Inquiry%20from%20Website&body=Hello%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20services.">
+                <img src="image/picture_12389021.png" style= "width: 50px; height: 50px;"></a>
+                 <p> ymomafoods@gmail.com </p>
+               
+
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 YMOMA FOODS</p>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- JavaScript for page switching -->
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show the selected page
+            const activePage = document.getElementById(pageId);
+            if (activePage) {
+                activePage.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>

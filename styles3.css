@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com');
+
+:root
+{
+    --green: green;
+    --black: #130f40;
+    --Light-color: #667;
+    /** --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1); **/
+    --border: 2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+}
+
+
+*
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.header
+{
+    border: 0px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    --box-shadow: var(--box-shadow);
+
+}
+
+.header .logo
+{
+
+    font-size: 1.0rem;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.banner
+{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    background: url(./image/Pecans-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    border-radius: .5rem;
+    /* text-align: center;  Center the text horizontally */
+    flex-direction: column;
+    align-items: center;
+     font-size: 4rem;
+     width: 100%; /* Makes the banner span the full width of its container */
+  height: 300px; /* Sets a specific height */
+    padding: 10px;
+    margin: 20 px auto;
+  box-sizing: border-box; /* Ensures padding doesn't add to the total width/height */
+}
+
+.bannerp
+{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    background: url(./image/Pecans-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    border-radius: .5rem;
+    /* text-align: center;  Center the text horizontally */
+    flex-direction: column;
+    align-items: center;
+     font-size: 4rem;
+     width: 100%; /* Makes the banner span the full width of its container */
+    height: 200px; /* Sets a specific height */
+    padding: 10px;
+    margin: 20 px auto;
+  box-sizing: border-box; /* Ensures padding doesn't add to the total width/height */
+}
+
+.banner h4
+{
+    color: #FD1C03;
+    font-size: 4rem;
+    margin-top: 65px;
+   
+
+}
+
+.bannerp h4
+{
+    color: #FD1C03;
+    font-size: 2rem;
+    margin-top: 65px;
+   
+
+}
+
+.banner h4 span
+{
+    color: #DAEE01;
+    font-size: 4rem;
+}
+
+.bannerp h4 span
+{
+    color: #DAEE01;
+    font-size: 2rem;
+}
+
+.banner h3
+{
+    color: #66FF00;
+    font-size: 3.5rem;
+    font-weight: bolder;
+     margin-bottom: 50px;
+
+}
+.bannerp h3
+{
+    color: #66FF00;
+    font-size: 2rem;
+    font-weight: bolder;
+     margin-bottom: 50px;
+
+}
+
+/* Styling for the Tagline Container */
+.tagline-container {
+    font-style: italic;
+    background-color: #9b0e0e; /* Dark background for visibility */
+    color: #fff;            /* White text color */
+    padding: 5px 0;       /* Some padding above and below */
+    text-align: center;    /* Center the text horizontally */
+    display: flex;         /* Use flexbox for layout */
+    justify-content: center; /* Center the taglines within the container */
+    gap: 70px;             /* Space between the individual taglines */
+    font-size: 0.3em;      /* Smaller font size */
+}
+
+.tagline-container p {
+    margin: 0; /* Remove default paragraph margins */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Positions logo left, nav right */
+  align-items: center; /* Vertically centers them */
+  padding: 10px 20px;
+}
+
+.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 20px; /* Space between links */
+}
+
+/* To force navigation center regardless of logo width */
+.logo, .navbar-spacer {
+  flex: 1;
+}
+
+
+.logo img {
+    height: 150px; /* Set a specific height */
+    width: auto;  /* Maintain the aspect ratio */
+    margin: 15px; /* Add some space around the logo */
+}
+
+
+
+
+
+.bannerc {
+    background-color: #265f06; /* A distinct blue color */
+    color: white;
+    text-align: center;
+    padding: 50px 10px; /* Large padding makes it a "banner" size */
+}
+
+
+
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    color: #66FF00;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    outline-offset: -1rem;
+    
+}
+
+.center-grid-container {
+    display: grid; /* Defines the container as a grid context */
+    height: 50vh; /* Makes the container full height of the viewport */
+    place-items: center; /* Centers the item(s) horizontally and vertically within the container */
+    background-color: none; /* Optional: adds a background color for visibility */
+}
+
+.grid-itemi {
+    padding: 20px;
+    background-color: white; /* Optional: adds a background color for visibility */
+    color: green;
+    text-align:justify;
+    justify-content: center;
+    border-radius: 8px;
+    width: 80%; /* Optional: controls the width of your grid item */
+    max-width: 400px; /* Optional: ensures it doesn't get too wide on large screens */
+}
+
+/* Basic Reset and Styling for the Nav Container */
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Helps contain floats */
+    background-color: none; /* Dark background color */
+    display: flex; /* Uses Flexbox for easy alignment */
+    
+}
+
+/* Style the List Items */
+nav ul li {
+    float: left; /* Aligns list items horizontally (alternative to flex) */
+}
+
+/* Style the Links and make the entire area clickable */
+nav ul li a {
+    display: block; /* Makes the whole link area fill the <li> */
+    color: black;
+    text-align: center;
+    padding: 14px 16px; /* Adds space around the text, increasing clickable area */
+    text-decoration: none; /* Removes default link underlines */
+}
+
+/* Change color on hover for interactivity */
+nav ul li a:hover {
+    background-color: #aca3a3;
+    color: black;
+}
+
+
+
+.grid-container {
+    display: grid;
+    /* Creates 3 columns of equal width (1fr) with a 20px gap */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the grid container on the page */
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    /* Optional: use flexbox to center content vertically */
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.grid-items{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    /* Optional: use flexbox to center content vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.grid-item h2 {
+    margin-top: 0;
+}
+
+.grid-item a {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: justify;
+}
+
+.grid-items a h2 {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: justify;
+}
+
+/* Responsive adjustment: stack columns on small screens */
+@media (max-width: 768px) {
+    .grid-container {
+        /* Changes to 1 column on screens smaller than 768px */
+        grid-template-columns: 1fr; 
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/** Contact Us Page **/
+
+#more {
+    display: none; /* Hides the extra content by default */
+}
+
+.button {
+  background-color: green;
+  border: none;
+  color: black;
+  font-weight: bolder;
+  padding: 10px 12px;
+  text-align: center;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
