@@ -50,7 +50,71 @@
 
 body {
     font-family: sans-serif;
+    font-size: 16px;
 }
+
+/* Style for the Biblical Phrase */
+.top-phrase {
+  background-color: #f8f9fa; /* Light background */
+  color: #333; /* Text color */
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Basic styling for the desktop navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Hide the hamburger icon on large screens */
+.nav-links .icon {
+  display: none;
+}
+
+/* When the screen is 600px wide or less */
+@media screen and (max-width: 600px) {
+  /* Hide all links except the first one ("Home") */
+  .nav-links a:not(:first-child) { display: none; }
+  /* Show the hamburger icon */
+  .nav-links a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* This class is added by JavaScript when the icon is clicked */
+@media screen and (max-width: 600px) {
+  .nav-links.responsive { position: relative; }
+  .nav-links.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  /* Display the links vertically as a dropdown */
+  .nav-links.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 
 .banner
 {
@@ -373,3 +437,74 @@ footer {
   font-size: 16px;
   cursor: pointer;
 }
+
+/** media queries */
+/**
+@media (max-width: 991px)
+{
+    html
+    {
+    font-size: 55%;
+    }
+
+    .header
+    {
+    padding: 2rem;
+    }
+    section
+    {
+        padding: 2rem 9%;
+    }
+
+
+}
+
+@media (max-width: 768px)
+{
+    #menu-btn
+    {
+        display: inline-block;
+    }
+
+    .header 
+    {
+        width: 90%;
+    }
+
+
+
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+
+    }
+
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+
+    }
+}
+
+@media (max-width: 450px)
+{
+    html
+{
+    font-size: 50%;
+}
+.heading
+{
+    font-size: 2.5rem;
+}
+
+}
+
+**/

@@ -22,6 +22,10 @@
         <p>Food is Medicine, Medicine is Food</p>
     </div> 
 
+    <div class="top-phrase">
+    <p>For it was neither herb, nor mollifying plaster that healed them, but thy word, O Lord, which healeth all things. - Wisdom 16:12</p>
+  </div>
+
     <header class="navbar">
 
         
@@ -29,14 +33,17 @@
             <img src="image/NewLogo.png" alt="Company Name Logo">
         </div>
 
-        <nav class="nav-links">
+        <nav class="nav-links" id = "mytopnav">
             <ul>
-            <li><a href="index.html" onclick="showPage('index')">Home</a></li>
+            <li><a href="index.html" onclick="showPage('index')" class="active">Home</a></li>
             <li><a href="products.html" onclick="showPage('products')">Products</a></li>
             <li><a href="aboutus.html" onclick="showPage('aboutus')">About YMOMA</a></li>
             <li><a href="contact.html" onclick="showPage('contact')">Contact</a></li>
-           
+           <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+    &#9776; <!-- This is the Unicode for the triple-bar (hamburger) icon -->
+  </a>
         </ul>
+        
     </nav>
     <div class="navbar-spacer"></div>
 
@@ -106,6 +113,24 @@ It’s the foundation of a life lived well.
             }
         }
     </script>
+
+<script>
+
+    function toggleMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav-links") 
+    {
+    x.className += " responsive";
+    } 
+    else 
+    {
+    x.className = "nav-links";
+    }
+}
+
+</script>
+
+
 
 </body>
 </html>
