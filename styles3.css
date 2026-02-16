@@ -53,10 +53,44 @@ body {
     font-size: 16px;
 }
 
+/* Hide checkbox and menu items by default */
+#check {
+    display: none;
+}
+
+.nav-links {
+    display: none; /* Hidden on small screens */
+    /* Add styles for a vertical drop-down here (position: absolute, etc.) */
+}
+
+/* Show menu when checkbox is checked */
+#check:checked ~ .nav-links {
+    display: block; 
+}
+
+/* General styles for the icon label */
+.checkbtn {
+    display: block; /* Show only on mobile by default */
+    cursor: pointer;
+}
+
+/* Desktop styles: Hide hamburger, show nav links */
+@media only screen and (min-width: 768px) {
+    .checkbtn {
+        display: none; /* Hide on larger screens */
+    }
+    .nav-links {
+        display: flex; /* Show links horizontally on large screens */
+        /* Add desktop layout styles (float, etc.) */
+    }
+}
+
+
 /* Style for the Biblical Phrase */
 .top-phrase {
   background-color: #f8f9fa; /* Light background */
   color: #333; /* Text color */
+  font-weight: bolder;
   text-align: center;
   padding: 10px 0;
   font-family: 'Georgia', serif;
@@ -64,55 +98,8 @@ body {
   font-size: 14px;
   width: 100%;
   position: relative;
+  justify-content: center;
   z-index: 1000; /* Ensures it stays on top */
-}
-
-/* Basic styling for the desktop navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Hide the hamburger icon on large screens */
-.nav-links .icon {
-  display: none;
-}
-
-/* When the screen is 600px wide or less */
-@media screen and (max-width: 600px) {
-  /* Hide all links except the first one ("Home") */
-  .nav-links a:not(:first-child) { display: none; }
-  /* Show the hamburger icon */
-  .nav-links a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* This class is added by JavaScript when the icon is clicked */
-@media screen and (max-width: 600px) {
-  .nav-links.responsive { position: relative; }
-  .nav-links.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  /* Display the links vertically as a dropdown */
-  .nav-links.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 
 
@@ -231,11 +218,14 @@ body {
   padding: 10px 20px;
 }
 
+
 .nav-links {
   flex: 2;
   display: flex;
   justify-content: center;
 }
+
+
 
 .nav-links ul {
   display: flex;

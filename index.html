@@ -33,15 +33,18 @@
             <img src="image/NewLogo.png" alt="Company Name Logo">
         </div>
 
-        <nav class="nav-links" id = "mytopnav">
-            <ul>
-            <li><a href="index.html" onclick="showPage('index')" class="active">Home</a></li>
+        <nav class="nav-links">
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            
+        <ul>
+            <li><a href="index.html" onclick="showPage('index')">Home</a></li>
             <li><a href="products.html" onclick="showPage('products')">Products</a></li>
             <li><a href="aboutus.html" onclick="showPage('aboutus')">About YMOMA</a></li>
             <li><a href="contact.html" onclick="showPage('contact')">Contact</a></li>
-           <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-    &#9776; <!-- This is the Unicode for the triple-bar (hamburger) icon -->
-  </a>
         </ul>
         
     </nav>
@@ -54,7 +57,7 @@
     
    
     <!-- Banner section-->
-        <div class="banner">
+        <div class="bannerp">
           
             <h4> A <span>ZING</span> IN YOUR TONGUE </h4>
             <br>
@@ -113,23 +116,6 @@ It’s the foundation of a life lived well.
             }
         }
     </script>
-
-<script>
-
-    function toggleMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "nav-links") 
-    {
-    x.className += " responsive";
-    } 
-    else 
-    {
-    x.className = "nav-links";
-    }
-}
-
-</script>
-
 
 
 </body>
