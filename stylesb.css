@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    grid-template-rows: auto 2fr auto; 
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 30px;
+    background-color: black;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#brand a {
+    color: greenyellow;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul a {
+    color: yellow;
+    font-weight: bolder;
+
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 120px;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    }
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+/**
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+      -webkit-transform: rotate(-45deg) translate(-6px, 8px);
+    transform: rotate(-45deg) translate(-6px, 8px);
+}
+    **/
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 20px;
+    height: calc(100vh - 50px);
+    width: 100%;
+    min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.mobile-menu li {
+    margin: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    header nav {
+        display: none;
+    }
+
+
+#hamburger-icon{
+    display: block;
+}
+
+}
+
+.top-phrase {
+  background-color: #f8f9fa; /* Light background */
+  color: #333; /* Text color */
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+.tagline-container {
+    font-style: italic;
+    background-color: #9b0e0e; /* Dark background for visibility */
+    color: #fff;            /* White text color */
+    padding: 5px 0;       /* Some padding above and below */
+    text-align: center;    /* Center the text horizontally */
+    display: flex;         /* Use flexbox for layout */
+    justify-content: center; /* Center the taglines within the container */
+    gap: 70px;             /* Space between the individual taglines */
+    font-size: 0.5em;      /* Smaller font size */
+}
+
+.tagline-container p {
+    margin: 0; /* Remove default paragraph margins */
+}
+
+
+.bannerp
+{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    background: url(./image/Pecans-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    border-radius: .5rem;
+    /* text-align: center;  Center the text horizontally */
+    flex-direction: column;
+    align-items: center;
+     font-size: 4rem;
+     width: 100%; /* Makes the banner span the full width of its container */
+    height: 200px; /* Sets a specific height */
+    padding: 10px;
+    margin: 20 px auto;
+  box-sizing: border-box; /* Ensures padding doesn't add to the total width/height */
+}
+
+.bannerp h4
+{
+    color: #FD1C03;
+    font-size: 2rem;
+    margin-top: 65px;
+   
+
+}
+
+.bannerp h4 span
+{
+    color: #DAEE01;
+    font-size: 2rem;
+}
+
+.bannerp h3
+{
+    color: #66FF00;
+    font-size: 2rem;
+    font-weight: bolder;
+     margin-bottom: 50px;
+
+}
+
+
+.center-grid-container {
+    display: flex; /* Defines the container as a grid context */
+    height: 60vh; /* Makes the container full height of the viewport */
+    place-items: center; /* Centers the item(s) horizontally and vertically within the container */
+    background-color: none; /* Optional: adds a background color for visibility */
+}
+
+.grid-itemi {
+    padding: 20px;
+    background-color: white; /* Optional: adds a background color for visibility */
+    color: green;
+    text-align:justify;
+    justify-content: center;
+    border-radius: 8px;
+    width: 80%; /* Optional: controls the width of your grid item */
+    max-width: 400px; /* Optional: ensures it doesn't get too wide on large screens */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+     margin-top: auto;
+   border-bottom: 2px #4C4C4C solid;
+    overflow: hidden;
+    position: sticky;
+    top: 100%;
+
+   
+}
+
+
+.logo {
+    display: flex;
+    align-items: center; /* Vertically centers text with the logo */
+    gap: 10px; /* Space between logo and text */
+}
+
+.logo1 {
+    height: 50px; /* Adjust size as needed */
+    width: auto;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: greenyellow;
+}
+
+main {
+  flex: 1; /* This makes the main content grow to fill the remaining space */
+    background-color: greenyellow;
+    color: black;
+    width: 100%;           /* Or max-width: 1200px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+
+
+.grid-container {
+    display: grid;
+    /* Creates 3 columns of equal width (1fr) with a 20px gap */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the grid container on the page */
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    /* Optional: use flexbox to center content vertically */
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.grid-items{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 70px;
+    border-radius: 5px;
+    /* Optional: use flexbox to center content vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.grid-item h2 {
+    margin-top: 0;
+}
+
+.grid-item a {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: justify;
+}
+
+.grid-items a h2 {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: justify;
+}
+
+/* Responsive adjustment: stack columns on small screens */
+@media (max-width: 768px) {
+    .grid-container {
+        /* Changes to 1 column on screens smaller than 768px */
+        grid-template-columns: 1fr; 
+    }
+}
+
+/** About Us Page **/
+
+/** Contact Us Page **/
+
+#more {
+    display: none; /* Hides the extra content by default */
+}
+
+.button {
+  background-color: green;
+  border: none;
+  color: black;
+  font-weight: bolder;
+  padding: 10px 12px;
+  text-align: center;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* This button is for the products page to create the products tab in orange */
+
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    color: #66FF00;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    outline-offset: -1rem;
+    
+}
+

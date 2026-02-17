@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YMOMA FOODS</title>
-    <link rel="stylesheet" href="styles3.css">
-
-    <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Add icon library -->
-
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation 
+             Bar With Dropdown
+      </title>
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="stylesb.css">
 </head>
-<body>
 
-     <!-- Header section Start-->
-        
-        
-     <!-- Taglines Section -->
+<body>
     <div class="tagline-container">
         <p>Cibus medicina et medicina cibus est</p>
         <p>உணவே மருந்து, மருந்தே உணவு</p>
         <p>Food is Medicine, Medicine is Food</p>
-    </div>  
+    </div> 
 
-     <div class="top-phrase">
+    <div class="top-phrase">
     <p>For it was neither herb, nor mollifying plaster that healed them, but thy word, O Lord, which healeth all things. - Wisdom 16:12</p>
   </div>
+<header>
+    
+   
+    <div class = "logo">
+            <img src="image/NewLogo.png" alt="Company Name Logo" class = "logo1">
+            <span class="name">YMOMA</span>
 
-    <header class="navbar">
-        
-        <div class = "logo">
-            <img src="image/NewLogo.png" alt="Company Name Logo">
-        </div>
-
-        <nav class="nav-links">
-
-             
-
-            <ul>
-
-                <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars"></i>
-            </label>
-            
-            <li><a href="index.html" onclick="showPage('index')">Home</a></li>
-            <li><a href="products.html" onclick="showPage('products')">Products</a></li>
-            <li><a href="aboutus.html" onclick="showPage('aboutus')">About YMOMA</a></li>
-            <li><a href="contact.html" onclick="showPage('contact')">Contact</a></li>
+        <nav>
+         <ul>
+            <li><a class="navbar-link home-link" href="index.html">Home</a></li>
+            <li><a class="navbar-link home-link" href="products.html">Products</a></li>
+            <li><a class="navbar-link about-link" href="aboutus.html">About Us</a></li>
+            <li><a class="navbar-link contact-link" href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-    <div class="navbar-spacer"></div>
+        </nav>
 
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="navbar-link home-link" href="index.html">Home</a></li>
+                <li><a class="navbar-link home-link" href="products.html">Products</a></li>
+            <li><a class="navbar-link about-link" href="aboutus.html">About Us</a></li>
+            <li><a class="navbar-link contact-link" href="contact.html">Contact</a></li>
+        </ul>
+        
+        </div>
     </header>
 
     
@@ -71,25 +69,32 @@
             <br>
             <br>
             <p><a href="#learn" class="cta-button">Our Products</a></p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+           
+            <footer>
+                <p>&copy; 2026 YMOMA Foods. All rights reserved.</p>
+            </footer>
+
         </main>
 
     
-    <!-- JavaScript for page switching -->
     <script>
-        function showPage(pageId) {
-            // Hide all pages
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => {
-                page.classList.remove('active');
-            });
 
-            // Show the selected page
-            const activePage = document.getElementById(pageId);
-            if (activePage) {
-                activePage.classList.add('active');
-            }
+        function toggleMobileMenu(menu){
+            menu.classList.toggle('open');
         }
+
     </script>
+
 
 </body>
 </html>
