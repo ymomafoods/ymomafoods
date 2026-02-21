@@ -26,9 +26,9 @@ header a {
 }
 
 header {
-    padding: 0 30px;
-    background-color: black;
-    height: 75px;
+    padding: 0 15px;
+    background-color: green;
+    height: 50px;
     display: flex;
     justify-content: space-between;
 
@@ -40,6 +40,24 @@ header {
     display: flex;
     align-items: center;
 }
+
+/* Hide both by default */
+.tagline span {
+  display: none;
+}
+
+/* Show Hebrew if page is set to Hebrew */
+:lang(he) .tagline span[lang="he"] {
+  display: inline;
+  direction: rtl; /* Crucial for Hebrew */
+}
+
+/* Show English if page is set to English */
+:lang(en) .tagline span[lang="en"] {
+  display: inline;
+  direction: ltr;
+}
+
 
 #brand a {
     color: greenyellow;
@@ -164,7 +182,7 @@ ul li:hover {
     display: flex;         /* Use flexbox for layout */
     justify-content: center; /* Center the taglines within the container */
     gap: 70px;             /* Space between the individual taglines */
-    font-size: 0.5em;      /* Smaller font size */
+    font-size: 0.8em;      /* Smaller font size */
 }
 
 .tagline-container p {
@@ -259,7 +277,7 @@ footer {
 
 .logo1 {
     height: 50px; /* Adjust size as needed */
-    width: auto;
+    width: 50px;
 }
 
 .name {
@@ -270,8 +288,8 @@ footer {
 
 main {
   flex: 1; /* This makes the main content grow to fill the remaining space */
-    background-color: greenyellow;
-    color: black;
+    background-color: green;
+    color: yellow;
     width: 100%;           /* Or max-width: 1200px; */
     margin-left: auto;
     margin-right: auto;
