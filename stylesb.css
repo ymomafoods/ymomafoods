@@ -239,15 +239,15 @@ ul li:hover {
 /* Media query for screens wider than 768px (common breakpoint for tablets/desktops) */
 @media (max-width: 768px) {
     bannerp h3 {
-        font-size: 4rem; /* Larger font size for desktop devices */
+        font-size: 1rem; /* Larger font size for desktop devices */
     }
 
     bannerp h4 {
-        font-size: 4rem; /* Larger font size for desktop devices */
+        font-size: 1rem; /* Larger font size for desktop devices */
     }
 
     bannerp h4 span {
-        font-size: 4rem; /* Larger font size for desktop devices */
+        font-size: 1rem; /* Larger font size for desktop devices */
     }
 
 }
