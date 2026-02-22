@@ -239,15 +239,15 @@ ul li:hover {
 /* Media query for screens wider than 768px (common breakpoint for tablets/desktops) */
 @media (max-width: 768px) {
     .bannerp h3 {
-        font-size: 48px; /* Smaller font size for mobile devices */
+        font-size: 30px/* Smaller font size for mobile devices */
     }
 
     .bannerp h4 {
-        font-size: 48px; /* Smaller font size for mobile devices */
+        font-size: 30px/* Smaller font size for mobile devices */
     }
 
     .bannerp h4 span {
-        font-size: 48px; /* Smaller font size for mobile devices */
+        font-size: 30px; /* Smaller font size for mobile devices */
     }
 
 }
