@@ -215,7 +215,7 @@ ul li:hover {
 .bannerp h4
 {
     color: #FD1C03;
-    font-size: 2rem;
+    font-size: 36px;
     margin-top: 65px;
    
 
@@ -224,13 +224,13 @@ ul li:hover {
 .bannerp h4 span
 {
     color: #DAEE01;
-    font-size: 1rem;
+    font-size: 36px;
 }
 
 .bannerp h3
 {
     color: #66FF00;
-    font-size: 1rem;
+    font-size: 36px;
     font-weight: bolder;
      margin-bottom: 50px;
 
@@ -239,15 +239,15 @@ ul li:hover {
 /* Media query for screens wider than 768px (common breakpoint for tablets/desktops) */
 @media (max-width: 768px) {
     .bannerp h3 {
-        font-size: 1rem; /* Larger font size for desktop devices */
+        font-size: 12px; /* Larger font size for desktop devices */
     }
 
     .bannerp h4 {
-        font-size: 1rem; /* Larger font size for desktop devices */
+        font-size: 12px; /* Larger font size for desktop devices */
     }
 
     .bannerp h4 span {
-        font-size: 1rem; /* Larger font size for desktop devices */
+        font-size: 12px; /* Larger font size for desktop devices */
     }
 
 }
