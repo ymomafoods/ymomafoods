@@ -42,20 +42,41 @@ header {
 }
 
 /* Hide both by default */
+/**
 .tagline span {
   display: none;
 }
 
+**/
+
 /* Show Hebrew if page is set to Hebrew */
+/**
+
 :lang(he) .tagline span[lang="he"] {
   display: inline;
   direction: rtl; /* Crucial for Hebrew */
+  /**
 }
+  **/
 
 /* Show English if page is set to English */
+/*
 :lang(en) .tagline span[lang="en"] {
   display: inline;
   direction: ltr;
+}
+*/
+
+/* Default styling */
+#tagline {
+    font-family: italic;
+    font-size: 1.5em;
+}
+
+/* Specific styling for Hebrew (Right-to-Left) */
+:lang(he) #tagline {
+    direction: rtl;
+    text-align: right;
 }
 
 
@@ -121,13 +142,14 @@ ul li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin-left: auto;
 }
 
 .mobile-menu{
     display: none;
     position: absolute;
-    top: 160px;
+    top: 200px;
     left: 0;
     right: 20px;
     height: calc(100vh - 50px);
@@ -146,7 +168,7 @@ ul li:hover {
 
 
 
-@media only screen and (max-width: 600px){
+@media  screen and (max-width: 600px){
     header nav {
         display: none;
     }
@@ -154,6 +176,7 @@ ul li:hover {
 
 #hamburger-icon{
     display: block;
+    right:50px;
 }
 
 }

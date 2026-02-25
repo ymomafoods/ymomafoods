@@ -16,8 +16,15 @@
         <p>உணவே மருந்து, மருந்தே உணவு</p>
      <!--   <p>Food is Medicine, Medicine is Food</p>  -->
         <p class="tagline">
-  <span lang="he" class="rtl-text">תזונה נכונה זאת התרופה.תרופה זה האוכל</span>
+  <!-- <span lang="he" class="rtl-text">תזונה נכונה זאת התרופה.תרופה זה האוכל</span> 
   <span lang="en" class="ltr-text">Food is Medicine, Medicine is Food</span>
+  <span lang="fr" class="ltr-text">la nourriture est un médicament, la médecine est de la nourriture</span>
+
+        -->
+
+        <!-- The tagline will appear here -->
+<p id="tagline">Food is Medicine, Medicine is Food</p>
+
 </p>
 
     </div> 
@@ -88,14 +95,49 @@
     <footer>
         <p>&copy; 2026 YMOMA Foods. All rights reserved. </p>
     </footer>   
-     <script>
+     
+    <script>
 
-function toggleMobileMenu(menu){
-    menu.classList.toggle('open');
-}
+        function toggleMobileMenu(menu)
+    {
+        menu.classList.toggle('open');
+    }
 
     </script>
 
-    </body>
+     <script>
 
-    </html>
+    async function updateTagline() {
+    try {
+        // 1. Fetch user location data from a GeoIP API
+        const response = await fetch('https://ipapi.co');
+        const data = await response.json();
+        const country = data.country_code; // e.g., 'FR', 'IL', 'US'
+        
+        const taglineElement = document.getElementById('tagline');
+
+        // 2. Logic to change text based on country code
+        if (country === 'FR') {
+            taglineElement.innerText = "La nourriture est un médicament, La médecine est de la nourriture";
+            document.documentElement.lang = "fr"; // Set language attribute
+        } else if (country === 'IL') {
+            taglineElement.innerText = "תזונה נכונה זאת התרופה.תרופה זה האוכל";
+            document.documentElement.lang = "he";
+        } else {
+            // Default for all other countries
+            taglineElement.innerText = "Food is Medicine, Medicine is Food";
+            document.documentElement.lang = "en";
+        }
+    } catch (error) {
+        console.error("Error fetching location:", error);
+    }
+}
+
+// Run the function when the page loads
+window.onload = updateTagline;
+
+ </script>
+
+
+</body>
+</html>
