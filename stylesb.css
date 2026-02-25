@@ -41,44 +41,6 @@ header {
     align-items: center;
 }
 
-/* Hide both by default */
-/**
-.tagline span {
-  display: none;
-}
-
-**/
-
-/* Show Hebrew if page is set to Hebrew */
-/**
-
-:lang(he) .tagline span[lang="he"] {
-  display: inline;
-  direction: rtl; /* Crucial for Hebrew */
-  /**
-}
-  **/
-
-/* Show English if page is set to English */
-/*
-:lang(en) .tagline span[lang="en"] {
-  display: inline;
-  direction: ltr;
-}
-*/
-
-/* Default styling */
-#tagline {
-    font-family: italic;
-    font-size: 1.5em;
-}
-
-/* Specific styling for Hebrew (Right-to-Left) */
-:lang(he) #tagline {
-    direction: rtl;
-    text-align: right;
-}
-
 
 #brand a {
     color: greenyellow;
@@ -112,6 +74,8 @@ ul li:hover {
     margin: auto 0;
     display: none;
     cursor: pointer;
+    
+    
 }
 
 #hamburger-icon div {
@@ -120,6 +84,7 @@ ul li:hover {
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
+    
 
 }
 /**
@@ -142,14 +107,15 @@ ul li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
+    justify-content: flex-start;
+   
+    
 }
 
 .mobile-menu{
     display: none;
     position: absolute;
-    top: 200px;
+    top: 160px;
     left: 0;
     right: 20px;
     height: calc(100vh - 50px);
@@ -160,15 +126,17 @@ ul li:hover {
   padding: 0;
   margin: 0;
   z-index: 1;
+  
 }
 
 .mobile-menu li {
     margin: 10px;
+    
 }
 
 
 
-@media  screen and (max-width: 600px){
+@media  only screen and (max-width: 600px){
     header nav {
         display: none;
     }
@@ -176,7 +144,7 @@ ul li:hover {
 
 #hamburger-icon{
     display: block;
-    right:50px;
+    
 }
 
 }
