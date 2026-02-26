@@ -158,7 +158,7 @@ ul li:hover {
     /** I added the following four lines to push the menu icon to the right**/
     position: absolute;
     right: 40px; /* Adjust spacing from the edge */
-    top: 35%;
+    top: 20%;
     transform: translateY(-50%); /* Centers vertically */
     
 }
