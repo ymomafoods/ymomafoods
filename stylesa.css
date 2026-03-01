@@ -1,0 +1,350 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #23eb2d;
+           /* padding: 1px; */
+            /** added **/
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 5px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        nav ul {
+            list-style: none;
+            margin-right: 150px;
+            padding: 40;
+            display: flex;
+            gap: 120px;
+        }
+
+        nav ul li a {
+            color: rgb(167, 5, 5);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: hsl(29, 100%, 50%);
+        }
+
+         /* Hamburger Icon */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background: rgb(192, 30, 30);
+        }
+
+        /* Mobile Menu Hidden by Default */
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background-color: #33b427;
+            padding: 10px;
+        }
+
+        .mobile-menu a {
+            color: white;
+            padding: 10px 0;
+            text-decoration: none;
+            border-bottom: 1px solid #444;
+        }
+
+
+        /* Banner Section */
+        .bannerp {
+            /** New Code **/
+            background-color: #eee;
+            height: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: #555;
+             background: url(./image/Pecans-img-1.jpg);
+ 
+
+            /**Code from my website **/
+            background-position: center;
+    background-size: cover;
+    border-radius: .5rem;
+    flex-direction: column;
+     border: 1px solid;
+   padding-top: 7rem;
+    padding-bottom: 7rem;
+    width: 100%;
+   
+          }
+
+          .bannerp h4
+{
+    color: hsl(120, 89%, 75%);
+    font-size: 30px;
+    margin-top: 20px;
+   
+
+}
+
+.bannerp h4 span
+{
+    color: #DAEE01;
+    font-size: 30px;
+}
+
+.bannerp h3
+{
+    color: #66FF00;
+    font-size: 30px;
+    font-weight: bolder;
+     margin-bottom: 20px;
+
+}
+
+/* Media query for screens wider than 768px (common breakpoint for tablets/desktops) */
+@media (max-width: 768px) {
+    .bannerp h3 {
+        font-size: 20px/*Smaller font size for mobile devices */
+    }
+
+    .bannerp h4 {
+        font-size: 20px/* Smaller font size for mobile devices */
+    }
+
+    .bannerp h4 span {
+        font-size: 20px; /* Smaller font size for mobile devices */
+    }
+
+}
+
+
+        /* Main Content */
+        main {
+            padding: 10px;
+             background-color: #c2ddc6;
+             border: 1px solid #e2aeae;
+             margin-bottom: 0;
+             padding-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 1px;
+        }
+
+        
+.tagline-container {
+    font-style: italic;
+    background-color: #9b0e0e; /* Dark background for visibility */
+    color: #fff;            /* White text color */
+    padding: 3px 5px;       /* Some padding above and below */
+    text-align: center;    /* Center the text horizontally */
+    display: flex;         /* Use flexbox for layout */
+    justify-content: center; /* Center the taglines within the container */
+    gap: 50px;             /* Space between the individual taglines */
+    font-size: 0.8em;      /* Smaller font size */
+}
+
+.tagline-container p {
+    margin: 0; /* Remove default paragraph margins */
+}
+
+
+.top-phrase {
+  background-color: #c1d5e9; /* Light background */
+  color: #333; /* Text color */
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center; /* Vertically centers text with the logo */
+    gap: 8px; /* Space between logo and text */
+}
+
+.logo1 {
+    height: 70px; /* Adjust size as needed */
+    width: auto;
+}
+
+.name {
+    font-size: 29px;
+    font-weight: bold;
+    color: rgb(218, 57, 8);
+}
+
+
+         /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .hamburger {
+                
+                margin-left: auto;
+                 display: flex;
+
+    /** I added the following four lines to push the menu icon to the right**/
+    position: absolute;
+    right: 20px; /* Adjust spacing from the edge */
+    top: 50%;
+    transform: translateY(-50%); /* Centers vertically */
+            }
+
+            .mobile-menu.show {
+                display: flex;
+            }
+        }
+
+
+        
+
+/** About us page starts **/
+.grid-container {
+    display: grid;
+    /* Creates 3 columns of equal width (1fr) with a 20px gap */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 10px;
+    max-width: 1500px;
+    margin: 0 auto; /* Centers the grid container on the page */
+}
+
+.grid-item {
+    background-color: #c2ddc6;
+    border: 1px solid #e2aeae;
+    padding: 10px;
+    border-radius: 5px;
+    /* Optional: use flexbox to center content vertically */
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(218, 57, 8);
+    font-weight: 5px;
+    
+}
+
+.grid-items{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 70px;
+    color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    /* Optional: use flexbox to center content vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.grid-item h2 {
+    margin-top: 0;
+}
+
+.grid-item a {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: justify;
+}
+
+.grid-items a h2 {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: justify;
+}
+
+/* Responsive adjustment: stack columns on small screens */
+@media (max-width: 768px) {
+    .grid-container {
+        /* Changes to 1 column on screens smaller than 768px */
+        grid-template-columns: 1fr; 
+    }
+}
+
+/** About Us Page ends**/
+
+
+#more {
+    display: none; /* Hides the extra content by default */
+}
+
+.button {
+  background-color: green;
+  border: none;
+  color: black;
+  font-weight: bolder;
+  padding: 10px 12px;
+  text-align: center;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* This button is for the products page to create the products tab in orange */
+
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    color: #66FF00;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    outline-offset: -1rem;
+    
+}
+
+
+
