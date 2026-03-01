@@ -5,7 +5,7 @@
 
         /* Navigation Bar */
         nav {
-            background-color: #23eb2d;
+            background-color: rgb(147, 197, 114);
            /* padding: 1px; */
             /** added **/
             position: sticky;
@@ -57,13 +57,20 @@
             flex-direction: column;
             background-color: #33b427;
             padding: 10px;
+            position: fixed;
+        top: 60px;          /* adjust to match your nav height */
+        left: 0;
+        width: 100%;
+        z-index: 999;
+
         }
 
         .mobile-menu a {
-            color: white;
+            color: rgb(192, 30, 30);
             padding: 10px 0;
             text-decoration: none;
             border-bottom: 1px solid #444;
+            font-weight: bolder;
         }
 
 
@@ -103,8 +110,9 @@
 
 .bannerp h4 span
 {
-    color: #DAEE01;
+    color: #ec0a0a;
     font-size: 30px;
+    font-weight: bolde;
 }
 
 .bannerp h3
