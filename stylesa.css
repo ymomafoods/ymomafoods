@@ -57,11 +57,6 @@
             flex-direction: column;
             background-color: #33b427;
             padding: 10px;
-            position: fixed;
-        top: 260px;          /* adjust to match your nav height */
-        left: 0;
-        width: 100%;
-        z-index: 999;
 
         }
 
