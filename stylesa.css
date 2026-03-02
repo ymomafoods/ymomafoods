@@ -55,7 +55,7 @@
         .mobile-menu {
             display: none;
             flex-direction: column;
-            background-color: #33b427;
+            background-color: rgb(147, 197, 114);
             padding: 10px;
 
         }
