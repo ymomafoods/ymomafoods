@@ -57,6 +57,11 @@
             flex-direction: column;
             background-color: rgb(147, 197, 114);
             padding: 10px;
+             position: absolute;  /* Takes it out of the flow so it overlays */
+    top: 200;           /* Adjust this to match your navbar height */
+    left: 0;
+    right: 0;
+    z-index: 1000;    
 
         }
 
