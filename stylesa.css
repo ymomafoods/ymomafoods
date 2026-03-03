@@ -354,5 +354,20 @@
     
 }
 
+.social-media{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    background-color: #121d0a;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
 
-
+.social-media a {
+    display: inline-block;
+    color:hsl(118, 45%, 48%);
+    margin: 5px;
+}

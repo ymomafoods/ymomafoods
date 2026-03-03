@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YMOMA FOODS</title>
+     <!-- Add Font Awesome CDN link -->
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="stylesa.css">
    
 </head>
 
 <body>
+
+    
 
 <div class="tagline-container">
         <p>Cibus medicina et medicina cibus est</p>
@@ -41,6 +45,11 @@
             <li><a  href="aboutus.html">About Us</a></li>
             <li><a  href="contact.html">Contact</a></li>
         </ul>
+
+        </div>
+
+        
+
          <!-- Hamburger Icon -->
         <div class="hamburger" onclick="toggleMenu()">
             <div></div>
@@ -77,16 +86,22 @@
             </p>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        &copy; 2026 YMOMA Foods. All rights reserved.
-    </footer>
+<div class="social-media">
+    <a href="https://instagram.com/ymomafoods"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/share/1C431CMfTh/"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://t.me/ymomafoods"><i class="fa-brands fa-telegram"></i></a>
+</div>
 
-     <script>
-        function toggleMenu() {
-            document.getElementById("mobileMenu").classList.toggle("show");
-        }
-    </script>
+<!-- Footer -->
+  <footer>
+     &copy; 2026 YMOMA Foods. All rights reserved.
+  </footer>
+
+<script>
+    function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("show");
+    }
+</script>
 
 </body>
 </html>
