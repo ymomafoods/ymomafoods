@@ -305,6 +305,35 @@
     text-align: justify;
 }
 
+/** Products page starts **/
+
+.grid-containerp {
+    display: grid;
+    /* Creates 3 columns of equal width (1fr) with a 20px gap */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 5px;
+    max-width: 1500px;
+    margin: 0 auto; /* Centers the grid container on the page */
+}
+
+.grid-itemp {
+    background-color: #c2ddc6;
+    border: 1px solid #e2aeae;
+    padding: 5px;
+    border-radius: 5px;
+    /* Optional: use flexbox to center content vertically */
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(218, 57, 8);
+    font-weight: 5px;
+    
+}
+
+
 /* Responsive adjustment: stack columns on small screens */
 @media (max-width: 768px) {
     .grid-container {
@@ -377,30 +406,3 @@
 }
 
 
-/** Products page starts **/
-
-.grid-containerp {
-    display: grid;
-    /* Creates 3 columns of equal width (1fr) with a 20px gap */
-    grid-template-columns: repeat(3, 2fr); 
-    gap: 20px;
-    padding: 5px;
-    max-width: 1500px;
-    margin: 0 auto; /* Centers the grid container on the page */
-}
-
-.grid-itemp {
-    background-color: #c2ddc6;
-    border: 1px solid #e2aeae;
-    padding: 5px;
-    border-radius: 5px;
-    /* Optional: use flexbox to center content vertically */
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    text-align: justify; 
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(218, 57, 8);
-    font-weight: 5px;
-    
-}
