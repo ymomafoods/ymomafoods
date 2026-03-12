@@ -311,6 +311,10 @@
         /* Changes to 1 column on screens smaller than 768px */
         grid-template-columns: 1fr; 
     }
+     .grid-containerp {
+        /* Changes to 1 column on screens smaller than 768px */
+        grid-template-columns: 1fr; 
+    }
 }
 
 /** About Us Page ends**/
