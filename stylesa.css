@@ -264,6 +264,33 @@
     
 }
 
+.grid-containerp {
+    display: grid;
+    /* Creates 3 columns of equal width (1fr) with a 20px gap */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the grid container on the page */
+}
+
+.grid-itemp {
+    background-color: #c2ddc6;
+    border: 1px solid #e2aeae;
+    padding: 10px;
+    border-radius: 5px;
+    /* Optional: use flexbox to center content vertically */
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(218, 57, 8);
+    font-weight: 5px;
+    
+}
+
+
 .grid-items{
     background-color: #f9f9f9;
     border: 1px solid #ddd;
