@@ -267,14 +267,24 @@
 .grid-containerp {
     display: grid;
     /* Creates 3 columns of equal width (1fr) with a 20px gap */
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 2fr); 
     gap: 20px;
     padding: 10px;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto; /* Centers the grid container on the page */
+    place-items: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-itempp img {
+   display: block;
+  margin: auto; /* Centers horizontally (and vertically if the container has a defined height) */
+  max-width: 100%;
 }
 
 .grid-itempp {
+    display: grid;
     background-color: #c2ddc6;
     border: 1px solid #e2aeae;
     padding: 10px;
@@ -286,7 +296,10 @@
     text-align: justify; 
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(218, 57, 8);
-    font-weight: 5px;
+    font-weight: bolder;
+    place-items: center;
+    justify-items: center;
+    align-items: center;   
     
 }
 
