@@ -345,6 +345,15 @@
         /* Changes to 1 column on screens smaller than 768px */
         grid-template-columns: 1fr; 
     }
+
+    
+}
+
+@media only screen and (max-width: 768px) {
+  .cta-button {
+    transform: scale(0.8); /* Shrinks button to 80% of original size */
+    transform-origin: center;
+  }
 }
 
 /** About Us Page ends**/
@@ -373,16 +382,16 @@
 
 
 .cta-button {
-    background-color: #ff5733;
+    background-color:rgb(147, 197, 114);
     color: white;
-    padding: 10px 10px;
+    padding: 10px .5px;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
     text-align: center;
     justify-content: center;
     display: grid;
-    color: #66FF00;
+    color: #df240c;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     outline-offset: -1rem;
     
